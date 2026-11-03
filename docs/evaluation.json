@@ -1,0 +1,121 @@
+{
+  "suite": "RevisionDesk deterministic policy fixtures",
+  "generatedAt": "2026-11-03T23:40:59.103Z",
+  "provenance": "Author-crafted synthetic fixtures. Policy checks only; not live API evaluation or model accuracy.",
+  "passed": 8,
+  "total": 8,
+  "evaluations": [
+    {
+      "id": "material-change",
+      "expected": {
+        "route": "material_review",
+        "changed": 2,
+        "canComplete": true
+      },
+      "actual": {
+        "route": "material_review",
+        "changed": 2,
+        "canComplete": true
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-expiry",
+      "expected": {
+        "route": "evidence_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "actual": {
+        "route": "evidence_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "pass": true
+    },
+    {
+      "id": "conflicting-lead-time",
+      "expected": {
+        "route": "evidence_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "actual": {
+        "route": "evidence_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "pass": true
+    },
+    {
+      "id": "injection-warning",
+      "expected": {
+        "route": "security_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "actual": {
+        "route": "security_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "pass": true
+    },
+    {
+      "id": "unicode-mismatch",
+      "expected": {
+        "route": "evidence_hold",
+        "changed": 1,
+        "canComplete": false
+      },
+      "actual": {
+        "route": "evidence_hold",
+        "changed": 1,
+        "canComplete": false
+      },
+      "pass": true
+    },
+    {
+      "id": "low-confidence",
+      "expected": {
+        "route": "evidence_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "actual": {
+        "route": "evidence_hold",
+        "changed": 2,
+        "canComplete": false
+      },
+      "pass": true
+    },
+    {
+      "id": "no-change",
+      "expected": {
+        "route": "standard_review",
+        "changed": 0,
+        "canComplete": true
+      },
+      "actual": {
+        "route": "standard_review",
+        "changed": 0,
+        "canComplete": true
+      },
+      "pass": true
+    },
+    {
+      "id": "uncertain-decision",
+      "expected": {
+        "route": "uncertainty_review",
+        "changed": 2,
+        "canComplete": true
+      },
+      "actual": {
+        "route": "uncertainty_review",
+        "changed": 2,
+        "canComplete": true
+      },
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "revisiondesk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-linked review of synthetic supplier quote revisions",
+  "engines": {"node": ">=18"},
+  "scripts": {"start": "node server.mjs", "test": "node --test", "evaluate": "node scripts/evaluate.mjs"},
+  "license": "MIT"
+}

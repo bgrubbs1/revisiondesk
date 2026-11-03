@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+private/
+dist/
+output/
+.playwright-cli/
+docs/RELEASE-GATES.md
+*.log
