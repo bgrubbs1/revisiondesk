@@ -4,7 +4,11 @@ The package's `demo/revisiondesk-replay.webm` is an actual recording of the loca
 
 The recording demonstrates source highlights, four-field human acknowledgment, a reviewer note, a downloaded audit, missing expiry, conflicting terms, Guard hold, invalid Unicode evidence, low confidence, routine reissue, Decide disagreement, and the narrow layout. Use the [three-minute narration plan](ENTRY.md) when producing the final judged presentation. Record an authorized live segment before claiming live integration.
 
-Run `npm start` to explore the actual application at http://127.0.0.1:4177. The recording is preparation material; it has not been publicly uploaded.
+**[Open the public replay demo](https://bgrubbs1.github.io/revisiondesk/).** Its deployment and browser assets were verified on November 4, 2026, including the missing-expiry evidence hold and disabled completion. The [public repository](https://github.com/bgrubbs1/revisiondesk) contains the initial real development history. The video is prepared for a subsequent source push; its public URL is not yet verified.
+
+The public site runs browser fixtures without credentials and disables live mode. A static host cannot provide the local Node live-analysis route. The replay banner and authored-data explanation remain visible. Run `npm start` to explore the local app at http://127.0.0.1:4177. No credentialed Clocked calls or contest submission have occurred.
+
+For the [challenge entry](https://clocked.rezolve.ai/challenge), provide a verified working demo link or a short video of the app in use, alongside the public repository. Keep both reviewable through November 18, 2026. Publishing the recording or the site does not save the official contest form.
 
 The package also contains `history/revisiondesk.bundle`, a Git bundle with the real local checkpoint history. To inspect it separately:
 

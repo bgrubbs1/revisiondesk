@@ -4,7 +4,7 @@ Build date: 2026-11-03. These checks used original synthetic data only. No crede
 
 ## Automated checks
 
-Node.js v22.23.4: **49 tests passed, zero failed**. Tests cover exact Unicode source positions, confidence of absence, contradictions, conservative routing, Guard early exits, malformed responses, timeouts, idempotency identifiers, call budgets, HTTP origin/host checks, static file boundaries, concurrent requests, split UTF-8 request bytes, and sanitized failure receipts. Provider transport responses are controlled test doubles.
+Node.js v22.23.4: **51 tests passed, zero failed** on 2026-11-04. Tests cover exact Unicode source positions, confidence of absence, contradictions, conservative routing, Guard early exits, malformed responses, timeouts, idempotency identifiers, call budgets, HTTP origin/host checks, static file boundaries, concurrent requests, split UTF-8 request bytes, sanitized failure receipts, and the static publication whitelist and project-relative paths. Provider transport responses are controlled test doubles.
 
 Run `npm test`. See [test-results.txt](test-results.txt) for the captured final output.
 
@@ -27,6 +27,8 @@ Installed Chrome, Playwright CLI, actual local server, desktop 1440 by 1100 and 
 11. The 390px layout has no horizontal overflow.
 
 All 11 checks passed. Browser console: zero errors and zero warnings. Desktop and mobile were visually inspected. Internal screenshots are not part of the public export. The local walkthrough video is a replay recording, without voice-over or a live API success claim.
+
+On 2026-11-04, the public [GitHub Pages demo](https://bgrubbs1.github.io/revisiondesk/) was opened in a browser after its deployment reported built. The replay interface and source values loaded, the live option was disabled, and switching to missing expiry showed the evidence hold, no highlight for the missing value, and disabled completion as expected. The static export also passed six Chrome checks at the `/revisiondesk/` path, with zero page errors and only five local asset requests. See [static publication evidence](STATIC-DEMO.md). These checks do not establish live API compatibility.
 
 ## Issues found and corrected
 

@@ -2,6 +2,10 @@
 
 **A quote revision desk where every extracted change has to show its evidence.**
 
+**[Open the public replay demo](https://bgrubbs1.github.io/revisiondesk/)** · [Source and development history](https://github.com/bgrubbs1/revisiondesk)
+
+The public demo was checked in a browser. It uses labeled synthetic replay; live mode is disabled on the static site. No credentialed Clocked call or contest submission has been completed.
+
 RevisionDesk helps an independent industrial salesperson review a single line item across two supplier quote revisions. It compares part identifiers, quantities, lead times, and expiry dates; links valid values to exact source spans; and puts missing, contradictory, or uncertain information in the review queue.
 
 The included quotes are original synthetic examples. No employer, customer, or personal quote data is included. This tool records a human review; it does not accept quotes, place orders, send messages, recommend prices, or make contractual decisions.
@@ -22,7 +26,7 @@ npm test
 
 Tests exercise deterministic fixture behavior, source-span validation, review routing, and the API adapter with a controlled transport. Passing these tests does **not** establish that the hosted Clocked API has been tested.
 
-This build passed **49 automated tests**, **8 deterministic fixture evaluations**, and **11 browser checks**. See [verification evidence](docs/VALIDATION.md). Run `npm run evaluate` to reproduce the fixture report. The [walkthrough notes](docs/DEMO.md) explain the included replay video and genuine local Git bundle.
+This build passed **51 automated tests**, **8 deterministic fixture evaluations**, **11 local browser checks**, and **6 static-demo browser checks**, with no browser console errors. See [verification evidence](docs/VALIDATION.md). Run `npm run evaluate` to reproduce the fixture report. The [walkthrough notes](docs/DEMO.md) explain the replay video and genuine local Git bundle.
 
 ## What to try
 
@@ -51,7 +55,7 @@ npm start
 
 Select **Live Clocked**, inspect the synthetic source text, then click **Analyze with Clocked** to transmit it. Missing configuration and upstream failures are reported explicitly; they do not silently substitute replay results. Start with the supplied synthetic text. Review the adapter's current timeout and request-budget limits in `src/clocked.mjs` before any live evaluation.
 
-No Clocked account was created and no real credentialed request was used to prepare this version. Account access, eligibility, terms, free-credit availability, and live response compatibility remain release gates.
+No Clocked account was created and no real credentialed request was used to prepare this version. Account sign-in, live response compatibility, and actual credit use remain unverified. Fixture and adapter tests do not establish provider accuracy or a working credentialed integration.
 
 ## How Clocked changes the workflow
 
@@ -83,6 +87,6 @@ This version reviews **one line-item pair at a time**. Repeated labeled part ide
 
 ## Challenge preparation
 
-RevisionDesk was started for the October 21–November 10, 2026 Clocked Build Challenge. The organizer permits AI coding tools and asks for an application whose endpoint outputs affect behavior. The submission needs a demo, public source repository, integration explanation, and team details by **November 10, 2026 at 11:59 p.m. Eastern**. See the [organizer announcement](https://dev.to/clockedatrezolveai/clocked-build-challenge-build-something-intelligent-2000-in-prizes-nb4), [challenge page](https://clocked.rezolve.ai/build-challenge), and [official rules](https://clocked.rezolve.ai/build-challenge/rules).
+RevisionDesk was started for the October 21-November 10, 2026 Clocked Build Challenge. The organizer permits AI coding tools and asks for an application whose endpoint outputs affect behavior. The submission needs a working application link or short application video, a public source repository with setup and development history, an integration explanation, team details, and award selections by **November 10, 2026 at 11:59 p.m. Eastern**. Demo and repository must stay public through November 18. See the [organizer announcement](https://dev.to/clockedatrezolveai/clocked-build-challenge-build-something-intelligent-2000-in-prizes-nb4), [challenge and entry form](https://clocked.rezolve.ai/challenge), and [official rules](https://clocked.rezolve.ai/build-challenge/rules).
 
-This local package is a prepared entry, not a submitted entry. Public repository creation, deployment, registration, account operations, and submission have not been performed. Contest rules and API behavior must be checked again before release.
+The [public repository](https://github.com/bgrubbs1/revisiondesk) contains the real initial development checkpoint, and the [public replay demo](https://bgrubbs1.github.io/revisiondesk/) is available. The contest entry has not been saved. Eligibility facts and account sign-in are still pending verification. Publishing source or a demo does not itself enter the challenge; the saved form at `/challenge` is the official entry.

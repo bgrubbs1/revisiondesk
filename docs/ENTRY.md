@@ -2,7 +2,9 @@
 
 **Short description:** Evidence-linked review of industrial quote revisions, with uncertainty that changes the review queue.
 
-**Primary award fit:** Best Use of Decide, Extract, or Fill. The broader application also targets the usefulness and experience criteria for Best Overall App.
+**Planned award selections:** Best Overall App; Best Use of Decide, Extract, or Fill; Best Use of Protect, Guard, or Inspect. No People's Choice entry is planned. Guard contributes a meaningful separate review hold, although real provider validation is still pending for all three implemented endpoints.
+
+**Current evidence:** [Public replay demo](https://bgrubbs1.github.io/revisiondesk/) and [public repository with development history](https://github.com/bgrubbs1/revisiondesk); 51 automated tests, eight fixture evaluations, 11 local browser checks, and six static-demo browser checks passed, with no browser console errors. See [VALIDATION.md](VALIDATION.md). No credentialed Clocked call or contest submission has occurred.
 
 ## The problem
 
@@ -42,31 +44,37 @@ After authorized live validation, record a separate short segment that visibly s
 
 ## Rubric critique
 
-The following is a preparation checklist, not a prediction of scores. Criterion weights were supplied from the challenge research and must be rechecked against the current [challenge page](https://clocked.rezolve.ai/build-challenge) before submission.
+The following is a preparation checklist, not a prediction of scores. Criterion weights were verified against the [official rules](https://clocked.rezolve.ai/build-challenge/rules) and [challenge page](https://clocked.rezolve.ai/challenge), retrieved during the November 4 preparation pass from content acquired November 3.
 
 | Criterion | Weight | Concrete strength | Remaining evidence or risk |
 | --- | ---: | --- | --- |
 | Usefulness | 25 | A specific recurring task with exact part identifiers and source-linked revision review | No usability study with real salespeople; use synthetic examples and avoid claiming measured time savings |
 | Core integration | 30 | Extract and Decide outputs affect evidence validity, review priority, and human attention | Largest release gap: no credentialed live run yet; test exact real envelopes and Unicode positions |
 | Meaningful extra endpoints | 15 | Guard introduces a distinct suspicious-input completion block | Verify the documented Guard response and demonstrate a real result; do not add endpoints solely for breadth |
-| User experience | 20 | Side-by-side evidence, focused change cards, explicit uncertainty, and audit visibility | Verify keyboard navigation, small screens, long values, error states, and discoverability with the actual built interface |
-| Reproducibility | 10 | Dependency-free local setup, deterministic fixtures, and controlled transport tests | Preserve genuine dated development history and attach exact test evidence to the final source revision |
+| User experience | 20 | Side-by-side evidence, focused change cards, explicit uncertainty, and audit visibility; 11 local and six static-demo browser checks passed | No independent usability study or broad cross-browser study |
+| Reproducibility | 10 | Dependency-free local setup, deterministic fixtures, controlled transport tests, and public initial development history | Attach verification to the final published source revision and keep the demo and repository accessible |
 
 ## Honest submission wording
 
-Use only after the corresponding evidence exists:
+Current copy-ready integration-status wording:
 
-> RevisionDesk uses Clocked Extract to locate quote fields and Decide to route material changes for human review. Source positions are independently validated before highlighting. Guard can stop completion when suspicious instructions are detected. The public demo includes clearly labeled synthetic replay scenarios for reproducibility. The live integration was validated against [list only successful endpoints] on [actual date], using original synthetic text.
+> RevisionDesk implements server-side adapters for Clocked Extract, Decide, and Guard. Their outputs drive exact evidence validation, material-change review, and suspicious-input holds. The demonstrated scenarios use clearly labeled synthetic replay: the returned values and scores are authored test data, not captured Clocked responses. The live adapter has deterministic transport tests but has not yet made a credentialed Clocked request.
 
-Until live validation exists, replace the last sentence with:
+Only after a successful real run, replace the final sentence with the actual successful endpoints and validation date. Do not imply that all endpoints passed if only some did.
 
-> This build includes an unverified server-side live adapter; the demonstrated runs use explicitly labeled synthetic replay.
+## Submission requirements and agreement
+
+The form at [the canonical challenge page](https://clocked.rezolve.ai/challenge) asks for the project overview, demo or video, public repository, endpoint integration explanation, team details, and award selections. Lessons learned and a public write-up are optional. The repository and demo must remain public through November 18, 2026.
+
+The official rules state: **"The saved form is the official entry."** They also state: **"By entering you agree to them."** Saving the official entry therefore has a different meaning from publishing this repository. The rules include eligibility and rights representations, teammate agreement, publicity permission, and a liability release. Actual final form checkbox labels have not been observed; do not invent them or certify facts that have not been verified.
+
+The public demo and repository are available. Submission remains pending account sign-in, verification of entrant/team eligibility, and a truthful final integration status. Entries can be edited until November 10, 2026 at 11:59 p.m. Eastern; the latest saved version is judged.
 
 ## Organizer references
 
 - [Organizer announcement](https://dev.to/clockedatrezolveai/clocked-build-challenge-build-something-intelligent-2000-in-prizes-nb4)
-- [Challenge and submission page](https://clocked.rezolve.ai/build-challenge)
+- [Challenge and submission page](https://clocked.rezolve.ai/challenge)
 - [Official rules](https://clocked.rezolve.ai/build-challenge/rules)
 - [Clocked developer documentation](https://clocked.rezolve.ai/developers)
 
-The announcement was readable during preparation on November 3, 2026. Direct retrieval of the rules and developer pages was unavailable in this documentation pass; detailed rule and API facts were supplied by the parallel research. Re-open the official pages before publishing or submitting.
+The official rules and canonical challenge page were retrieved through Parallel on November 4 from content acquired November 3. The rules reported no changes since October 19. The dynamic entry area returned only a loading message, so actual field limits and checkbox wording still require inspection in the signed-in form. The older `/build-challenge` address returned homepage content and should not be used for entry.

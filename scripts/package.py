@@ -21,7 +21,7 @@ with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED) as bundle:
         bundle.write(root / name, name)
     bundle.write(history, 'history/revisiondesk.bundle')
     video = root / 'output/playwright/revisiondesk-replay.webm'
-    if video.is_file():
+    if video.is_file() and 'demo/revisiondesk-replay.webm' not in tracked:
         bundle.write(video, 'demo/revisiondesk-replay.webm')
 digest = hashlib.sha256(archive.read_bytes()).hexdigest()
 metadata = {'filename': archive.name, 'bytes': archive.stat().st_size, 'sha256': digest,
