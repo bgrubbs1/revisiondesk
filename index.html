@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="revisiondesk-deployment" content="static-replay">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183a36">
+  <meta name="description" content="Evidence-linked review of quote revisions. An original synthetic demonstration for the Clocked Build Challenge.">
+  <title>RevisionDesk — Every change, accountable.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23183a36'/%3E%3Cpath d='M12 10h10a7 7 0 0 1 0 14h-4l10 7M12 10v21' fill='none' stroke='%23d9f296' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./public/styles.css">
+  <script type="module" src="./public/app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to review</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="./" class="brand" aria-label="RevisionDesk home"><span class="brand-icon">R<span>↗</span></span><span>Revision<span class="brand-light">Desk</span></span></a>
+      <div class="sidebar-caption">THE QUOTE REVIEW WORKSPACE</div>
+      <div class="nav-label">WORKBENCH <span>01</span></div>
+      <div class="nav-active"><span>▤</span> Revision review <span class="nav-dot"></span></div>
+      <div class="sidebar-rule"></div>
+      <div class="nav-label">SYNTHETIC CASE FILES</div>
+      <div id="scenario-list" class="scenario-list" aria-label="Example scenarios"></div>
+      <div class="sidebar-bottom"><span class="small-icon">◈</span><strong>Built for the human in the loop.</strong><p>Every field points to its source.<br>Every uncertainty stays visible.</p><div class="sidebar-footer">CLOCKED BUILD CHALLENGE · 2026</div></div>
+    </aside>
+    <main id="workspace">
+      <header class="topbar"><div class="breadcrumb">Workbench <span>/</span> Revision review</div><span class="data-label"><i></i> Original synthetic data</span></header>
+      <section class="page-heading"><div><div class="eyebrow">READ THE CHANGE. CHECK THE EVIDENCE.</div><h1>Every change, accountable.</h1><p>Compare supplier revisions with the source always in sight.</p></div><button id="export-audit" class="button secondary" title="Download the current local review record">↓ Export audit</button></section>
+      <section class="mode-strip" aria-label="Analysis mode"><span id="mode-badge" class="pill replay">FIXTURE REPLAY</span><span id="mode-copy">Author-crafted responses. No live AI call. No customer data.</span><label class="mode-select-label">Mode <select id="mode-select"><option value="replay">Fixture replay</option><option value="live" disabled>Live Clocked — run locally</option></select></label></section>
+      <section id="live-panel" class="live-panel" hidden><div><h2>Analyze a single line item</h2><p id="live-status">Checking local server…</p><p>Only synthetic examples. Clicking Analyze sends both texts to Clocked through this local server. Maximum 4,000 characters per revision. No automatic retries.</p></div><div class="input-grid"><label>Earlier revision<textarea id="before-input" maxlength="4000" rows="9"></textarea></label><label>Later revision<textarea id="after-input" maxlength="4000" rows="9"></textarea></label></div><button class="button primary" id="run-live">Analyze with Clocked →</button><p id="live-error" class="error-text" role="alert"></p></section>
+      <div id="review-content">
+        <section class="review-top"><div><div class="eyebrow" id="case-kicker">CASE 01 / SYNTHETIC QUOTE</div><h2 id="case-title">Reviewing revisions</h2><p id="case-summary"></p></div><ol class="pipeline" aria-label="Review pipeline"><li class="done"><span>1</span> Guard</li><li class="done"><span>2</span> Extract</li><li class="done"><span>3</span> Route</li><li class="active"><span>4</span> Review</li></ol></section>
+        <section id="route-banner" class="route-banner" aria-live="polite"></section>
+        <div class="review-layout">
+          <section class="source-area" aria-label="Source evidence"><div class="section-heading"><h3>Source documents <span class="count">02</span></h3><span>Click a field to trace its evidence</span></div><div class="documents"><article class="document"><header><span class="file-icon">▤</span><div><h4>Earlier revision</h4><span>BASELINE · ORIGINAL TEXT</span></div><span class="revision-tag">A</span></header><pre id="source-before"></pre><footer id="evidence-before">Exact source · unchanged</footer></article><article class="document"><header><span class="file-icon">▤</span><div><h4>Later revision</h4><span>REVISION · ORIGINAL TEXT</span></div><span class="revision-tag current">B</span></header><pre id="source-after"></pre><footer id="evidence-after">Exact source · unchanged</footer></article></div><div class="source-legend"><span><i class="legend-box"></i> Selected source span</span><span>Values are verbatim. Invalid spans never get a highlight.</span></div><section class="review-note"><label for="review-note">Reviewer note <span>LOCAL TO THIS SESSION</span></label><textarea id="review-note" rows="2" maxlength="2000" placeholder="Record what you checked or what needs clarification…"></textarea></section></section>
+          <section class="change-area" aria-label="Review queue"><div class="section-heading"><h3>Review queue <span class="count" id="change-count">04</span></h3><button id="filter-toggle" class="text-button" aria-pressed="false">Needs attention</button></div><div id="field-list"></div><div class="review-action"><p id="completion-hint"></p><button id="complete-review" class="button primary">Record review complete <span>✓</span></button><div id="completion-status" role="status"></div></div></section>
+        </div>
+        <section class="trace-section"><details id="trace-details"><summary><span>◷ &nbsp; Analysis & audit trail</span><span id="audit-count"></span></summary><div class="trace-body"><div id="analysis-receipt"></div><ol id="audit-list"></ol></div></details></section>
+      </div>
+      <footer class="page-footer"><span>RevisionDesk <span>·</span> Evidence before action.</span><span>Human review only. No orders, commitments, messages, or pricing advice.</span></footer>
+    </main>
+  </div>
+</body>
+</html>
