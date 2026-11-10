@@ -1,6 +1,6 @@
 # Verification evidence
 
-Build date: 2026-11-03. These checks used original synthetic data only. No credentialed Clocked call was made.
+Initial build date: 2026-11-03. The original checks below used authored synthetic fixtures and controlled transports. Separately, one bounded credentialed run on November 10, 2026 completed five Guard, Extract and Decide requests using 13 free Trial credits with zero charges. See [LIVE-VALIDATION.md](LIVE-VALIDATION.md) and its sanitized genuine audit and receipt.
 
 ## Automated checks
 
@@ -42,4 +42,4 @@ The execution sandbox initially rejected local HTTP/browser connections. An appr
 
 ## Remaining limits
 
-Live response compatibility, real model quality, extraction latency, and actual credit consumption remain unmeasured. One line item per pair; contradiction detection only covers repeated explicit labels. Scores are uncalibrated, and the editable local audit is not tamper-proof. There is no authenticated multi-user deployment. Publishing the live proxy would require deployment-specific authentication and abuse controls; the current server binds only to localhost.
+One synthetic-pair live run established successful response compatibility, exact source spans and observed credit use for that input. The request times and 13-credit total are recorded in [LIVE-VALIDATION.md](LIVE-VALIDATION.md); they do not establish general latency, model quality or production reliability. One line item per pair; contradiction detection only covers repeated explicit labels. Scores are uncalibrated, and the editable local audit is not tamper-proof. There is no authenticated multi-user deployment. Publishing the live proxy would require deployment-specific authentication and abuse controls; the current server binds only to localhost.

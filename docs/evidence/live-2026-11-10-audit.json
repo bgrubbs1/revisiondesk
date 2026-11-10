@@ -1,0 +1,247 @@
+{
+  "application": "RevisionDesk",
+  "schemaVersion": 1,
+  "exportedAt": "2026-11-10T04:25:16.411Z",
+  "provenance": {
+    "mode": "live",
+    "provider": "Clocked",
+    "policyVersion": "revisiondesk-1",
+    "startedAt": "2026-11-10T04:24:28.104Z",
+    "documentHashes": {
+      "before": "8d716c71a0b298e02f72e086fd2b31fb9207f564f2baac3e5c67e95dc5fc73d1",
+      "after": "1d4a395ac547acf702d810512fee3ffd7cea8571e82341545f341c6b0c55d245"
+    },
+    "calls": [
+      {
+        "endpoint": "/clocked/injection",
+        "elapsedMs": 857,
+        "credits": 2,
+        "costUsd": 0.000398,
+        "costBasis": "reference"
+      },
+      {
+        "endpoint": "/clocked/injection",
+        "elapsedMs": 201,
+        "credits": 2,
+        "costUsd": 0.000398,
+        "costBasis": "reference"
+      },
+      {
+        "endpoint": "/clocked/extract",
+        "elapsedMs": 272,
+        "credits": 4,
+        "costUsd": 0.000797,
+        "costBasis": "reference"
+      },
+      {
+        "endpoint": "/clocked/extract",
+        "elapsedMs": 254,
+        "credits": 4,
+        "costUsd": 0.000797,
+        "costBasis": "reference"
+      },
+      {
+        "endpoint": "/clocked/decide",
+        "elapsedMs": 286,
+        "credits": 1,
+        "costUsd": 0.000199,
+        "costBasis": "reference"
+      }
+    ],
+    "note": "Live model judgments require human review. Reference-basis costs are hypothetical production-rate comparisons, not charges."
+  },
+  "sourceHashes": {
+    "before": "8d716c71a0b298e02f72e086fd2b31fb9207f564f2baac3e5c67e95dc5fc73d1",
+    "after": "1d4a395ac547acf702d810512fee3ffd7cea8571e82341545f341c6b0c55d245"
+  },
+  "sourceDocuments": {
+    "before": "NORTHLINE COMPONENTS — SYNTHETIC QUOTE\nQuote reference: DEMO-Q104 · Revision A\nPart ID: VX-204-B\nDescription: Stainless valve assembly\nQuantity: 24 units\nLead time: 3 weeks after order\nExpiry: 2026-11-20\nOne line item. All names and values are invented for this demo.",
+    "after": "NORTHLINE COMPONENTS — SYNTHETIC QUOTE\nQuote reference: DEMO-Q104 · Revision B\nPart ID: VX-204-B\nDescription: Stainless valve assembly\nQuantity: 30 units\nLead time: 6 weeks after order\nExpiry: 2026-11-20\nOne line item. All names and values are invented for this demo."
+  },
+  "fields": [
+    {
+      "key": "part_id",
+      "label": "Part ID",
+      "before": {
+        "value": "VX-204-B",
+        "confidence": 0.9999999998139926,
+        "start": 88,
+        "end": 96,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "after": {
+        "value": "VX-204-B",
+        "confidence": 0.9999999997922431,
+        "start": 88,
+        "end": 96,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "changed": false,
+      "status": "unchanged",
+      "issues": [],
+      "priority": 0
+    },
+    {
+      "key": "quantity",
+      "label": "Quantity",
+      "before": {
+        "value": "24 units",
+        "confidence": 0.9999999991187061,
+        "start": 145,
+        "end": 153,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "after": {
+        "value": "30 units",
+        "confidence": 0.9999999993638524,
+        "start": 145,
+        "end": 153,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "changed": true,
+      "status": "changed",
+      "issues": [],
+      "priority": 60
+    },
+    {
+      "key": "lead_time",
+      "label": "Lead time",
+      "before": {
+        "value": "3 weeks after order",
+        "confidence": 0.999999999772883,
+        "start": 165,
+        "end": 184,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "after": {
+        "value": "6 weeks after order",
+        "confidence": 0.9999999998235543,
+        "start": 165,
+        "end": 184,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "changed": true,
+      "status": "changed",
+      "issues": [],
+      "priority": 60
+    },
+    {
+      "key": "expiry",
+      "label": "Quote expiry",
+      "before": {
+        "value": "2026-11-20",
+        "confidence": 0.9999999995308722,
+        "start": 193,
+        "end": 203,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "after": {
+        "value": "2026-11-20",
+        "confidence": 0.9999999998433402,
+        "start": 193,
+        "end": 203,
+        "verified": true,
+        "offsetBasis": "unicode-codepoints",
+        "missing": false,
+        "confidenceMeaning": "value",
+        "issue": null
+      },
+      "changed": false,
+      "status": "unchanged",
+      "issues": [],
+      "priority": 0
+    }
+  ],
+  "route": {
+    "code": "material_review",
+    "label": "Material change review",
+    "reasons": [
+      "Decide crossed the 0.90 material-change threshold. Review the impact with the source visible."
+    ]
+  },
+  "guard": {
+    "status": "clear",
+    "reasons": [],
+    "evidence": [],
+    "checks": {
+      "before": {
+        "status": "clear",
+        "reasons": [],
+        "evidence": [],
+        "probability": 0.005115097761434262
+      },
+      "after": {
+        "status": "clear",
+        "reasons": [],
+        "evidence": [],
+        "probability": 0.005962975830417161
+      }
+    }
+  },
+  "decide": {
+    "probability": 0.9887,
+    "decision": true,
+    "threshold": 0.9,
+    "consistent": true
+  },
+  "acknowledgedFields": [],
+  "reviewerNote": "",
+  "reviewComplete": false,
+  "events": [
+    {
+      "at": "2026-11-10T04:24:29.985Z",
+      "action": "source-loaded",
+      "detail": "Live response; two source revisions, one line item."
+    },
+    {
+      "at": "2026-11-10T04:24:29.985Z",
+      "action": "guard-evaluated",
+      "detail": "Guard status: clear."
+    },
+    {
+      "at": "2026-11-10T04:24:29.985Z",
+      "action": "evidence-validated",
+      "detail": "8 of 8 source spans verified exactly."
+    },
+    {
+      "at": "2026-11-10T04:24:29.985Z",
+      "action": "review-routed",
+      "detail": "Material change review. No commercial decision was made."
+    },
+    {
+      "at": "2026-11-10T04:25:16.409Z",
+      "action": "audit-exported",
+      "detail": "A local audit JSON was exported."
+    }
+  ],
+  "notice": "Local review record; not tamper-proof. No commercial decision or outgoing action.",
+  "publicationNote": "Sanitized genuine live browser export. Request identifiers were omitted; synthetic text, model scores, validated evidence, routing and incomplete human-review state are unchanged. Editable local record, not a signed attestation."
+}

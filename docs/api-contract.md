@@ -1,6 +1,6 @@
 # Clocked integration contract
 
-The adapter uses dependency-free Node HTTP requests. Documentation was inspected on 2026-11-03; no real Clocked request has been made in this build. Tests use synthetic transport responses. A live credential and an authorized smoke test remain release gates.
+The adapter uses dependency-free Node HTTP requests. Its contracts were rechecked on 2026-11-10, when one bounded local synthetic-pair run completed two Guard, two Extract and one Decide request successfully. See [live validation](LIVE-VALIDATION.md) for the genuine audit, usage and limits. Automated transport tests still use synthetic responses; one successful run does not establish broad provider reliability.
 
 ## Documented routes and output
 

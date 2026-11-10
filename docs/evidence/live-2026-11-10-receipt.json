@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "mode": "live",
+  "sourceCommit": "50404316f2f09515a0c734a5b54ec3ec06a6f6dc",
+  "documentHashes": {
+    "before": "8d716c71a0b298e02f72e086fd2b31fb9207f564f2baac3e5c67e95dc5fc73d1",
+    "after": "1d4a395ac547acf702d810512fee3ffd7cea8571e82341545f341c6b0c55d245"
+  },
+  "state": "completed",
+  "attempted": true,
+  "providerRequestCount": 5,
+  "dispatchedRequestCount": 5,
+  "observedCredits": 13,
+  "maxProviderRequests": 5,
+  "automaticRetries": 0,
+  "paidFallback": false,
+  "maxConcurrentReviews": 1,
+  "timeoutMs": 12000,
+  "calls": [
+    {
+      "number": 1,
+      "endpoint": "/clocked/injection",
+      "startedAt": "2026-11-10T04:24:28.106Z",
+      "dispatched": true,
+      "outcome": "received",
+      "httpStatus": 200,
+      "credits": 2,
+      "referenceCostUsd": 0.000398,
+      "costBasis": "reference"
+    },
+    {
+      "number": 2,
+      "endpoint": "/clocked/injection",
+      "startedAt": "2026-11-10T04:24:28.963Z",
+      "dispatched": true,
+      "outcome": "received",
+      "httpStatus": 200,
+      "credits": 2,
+      "referenceCostUsd": 0.000398,
+      "costBasis": "reference"
+    },
+    {
+      "number": 3,
+      "endpoint": "/clocked/extract",
+      "startedAt": "2026-11-10T04:24:29.164Z",
+      "dispatched": true,
+      "outcome": "received",
+      "httpStatus": 200,
+      "credits": 4,
+      "referenceCostUsd": 0.000797,
+      "costBasis": "reference"
+    },
+    {
+      "number": 4,
+      "endpoint": "/clocked/extract",
+      "startedAt": "2026-11-10T04:24:29.435Z",
+      "dispatched": true,
+      "outcome": "received",
+      "httpStatus": 200,
+      "credits": 4,
+      "referenceCostUsd": 0.000797,
+      "costBasis": "reference"
+    },
+    {
+      "number": 5,
+      "endpoint": "/clocked/decide",
+      "startedAt": "2026-11-10T04:24:29.689Z",
+      "dispatched": true,
+      "outcome": "received",
+      "httpStatus": 200,
+      "credits": 1,
+      "referenceCostUsd": 0.000199,
+      "costBasis": "reference"
+    }
+  ],
+  "publicationNote": "Sanitized final receipt from the same live run. Request identifiers were omitted. Counts, order, HTTP statuses, timings, usage and safety limits are unchanged. Reference costs are hypothetical production-rate comparisons, not charges.",
+  "accountUsageVerification": {
+    "verifiedAt": "2026-11-10T04:25:47.4041269Z",
+    "freeTrialCreditsUsed": 13,
+    "chargedUsd": 0,
+    "scope": "Post-run check for this one five-request validation. Account identity, balances and private authorization settings omitted."
+  }
+}
